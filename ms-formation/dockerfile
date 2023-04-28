@@ -1,0 +1,3 @@
+FROM openjdk:17-jdk-alpine
+copy target/ms-formation*.jar  ms.jar
+cmd java -jar ms.jar
