@@ -23,7 +23,7 @@ public class FormationAPI {
     @Autowired
     EtudiantProxy etudiantProxy;
 
-    @GetMapping("/formations/{id}")
+    @GetMapping("/formation/{id}")
     Formation getFOrmationWIthEtudiants(@PathVariable("id") Long id)
     {
         Formation formation=formationRepository.findById(id).get();
